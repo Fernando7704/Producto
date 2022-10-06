@@ -1,0 +1,9 @@
+c:\users\ferch\documents\visual studio 2015\Projects\FLuna20220917\BL\bin\Debug\BL.dll
+c:\users\ferch\documents\visual studio 2015\Projects\FLuna20220917\BL\bin\Debug\BL.pdb
+c:\users\ferch\documents\visual studio 2015\Projects\FLuna20220917\BL\bin\Debug\DL.dll
+c:\users\ferch\documents\visual studio 2015\Projects\FLuna20220917\BL\bin\Debug\ML.dll
+c:\users\ferch\documents\visual studio 2015\Projects\FLuna20220917\BL\bin\Debug\DL.pdb
+c:\users\ferch\documents\visual studio 2015\Projects\FLuna20220917\BL\bin\Debug\ML.pdb
+c:\users\ferch\documents\visual studio 2015\Projects\FLuna20220917\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+c:\users\ferch\documents\visual studio 2015\Projects\FLuna20220917\BL\obj\Debug\BL.dll
+c:\users\ferch\documents\visual studio 2015\Projects\FLuna20220917\BL\obj\Debug\BL.pdb

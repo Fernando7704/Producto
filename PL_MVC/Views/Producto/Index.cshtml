@@ -1,0 +1,44 @@
+﻿@model ML.Producto
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .btn{
+        border-radius:0;
+    }
+</style>
+<div style="float:right;">
+    @Html.ActionLink("+","Form","Producto",htmlAttributes:new{@class=" btn btn-success",@style="margin-top:5%;margin-botton:5%;"})
+</div>
+<div class="row" style="margin-top:5%;width:100%;">
+    @foreach (ML.Producto producto in Model.Productos)
+    {
+        <div class="col-md-3 col-xs-12 col-sm-3 col-lg-offset-1" style="margin-left:2%;height:450px;margin-bottom:2%;position:relative;border:1px solid black;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-right-radius:10px;border-bottom-left-radius:10px;">
+            @if (producto.Imagen == null)
+            {
+              <img src="~/Img/SIN-IMAGEN.jpg" style="height:200px; width:100%;"/>
+            }
+            else
+            {
+                <img src="data:image/jpeg;base64,@Convert.ToBase64String(producto.Imagen)" style="height:200px; width:100%;" />
+            }
+            <h2>@producto.Nombre</h2>
+            <p style="height:15%;">
+               @producto.Descripcion
+            </p>
+            <div style="color:red;text-align:center;">
+                $ @producto.Precio
+            </div>
+            <p style="display: flex;justify-content: center;"><a class="btn btn-warning"  href="@Url.Action("Form", "Producto", new { IdProducto = producto.IdProducto })">Editar</a></p>
+            <div style="position:absolute; background-color:black;width:10%;height:5%;top:5%;right:5%;color:white;border-radius:5px;text-align:center;">
+                @producto.Stock
+            </div>
+            
+        </div>
+
+    }
+    
+    
+</div>
+
