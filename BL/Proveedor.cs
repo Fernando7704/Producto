@@ -37,7 +37,7 @@ namespace BL
                             }
                             result.Correct = true;
                             result.ErrorMessenge = "Consulta éxitosa";
-                            //cmd.Connection.Close(); Hola
+                            //cmd.Connection.Close();
                             
                         }
                     }
